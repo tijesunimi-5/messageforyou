@@ -15,7 +15,7 @@ const user = [
     message: "You're amazing, you're beautiful, you're sweet, you're pretty, you're special, you're who i want, you're just so good - for me. \n I love you a lot and I need you to know a million times."
   },
   {
-    name: "ayomide",
+    name: "ayomideB",
     nickname: "Bestie",
     email: "",
     secretCode: "0402",
