@@ -14,8 +14,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
+  
   const router = useRouter();
-  const userName = getUsername();
+  
   const [errorMsg, setErrormsg] = useState();
   
 
@@ -24,8 +25,10 @@ export default function Home() {
 
     const name = document.getElementById("name").value;
 
+    const userName = getUsername(name);
+
     if (name === userName.name) {
-      router.push("/message");
+      router.push(`/message/${name}`);
     } else {
       console.log("name not found");
       setErrormsg("Enter a valid name");
@@ -57,7 +60,7 @@ export default function Home() {
             <input
               type="name"
               id="name"
-              className="border border-white shadow-md w-[350px] h-8 rounded-2xl pl-[90px]"
+              className="border border-white shadow-md w-[350px] h-8 rounded-2xl pl-[90px] pt-2 text-xl"
               required
             />
           </div>
@@ -72,7 +75,7 @@ export default function Home() {
             <input
               type="email"
               id="email"
-              className="border border-white shadow-md w-[320px] h-8 rounded-2xl pl-[90px]"
+              className="border border-white shadow-md w-[320px] h-8 rounded-2xl pl-[90px] pt-2 text-xl"
               required
             />
           </div>

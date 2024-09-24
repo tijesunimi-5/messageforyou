@@ -3,15 +3,26 @@ const user = [
     name: "Tijesunimi",
     nickname: "Teelight",
     email: "tijesunimiidowu16@gmail.com",
-    "secret-code": "0405",
+    secretCode: "0405",
     message:
-      "You're a Genius, You're smart, I love you, You mean a whole lot to me. C'mon take your time blush all you can",
+      "You're a Genius, You're smart, I love you, You mean a whole lot to me. C'mon take your time blush all you can.",
   },
+  {
+    name: "Ayomide",
+    nickname: "Bunny",
+    email: "ayo@gmail.com",
+    secretCode: "0401",
+    message: "You're amazing, you're beautiful, you're sweet, you're pretty, you're special, you're who i want, you're just so good - for me. \n I love you a lot and I need you to know a million times."
+  }
 ];
 
+export const getMessageByName = (name) => {
+  const foundUser = user.find((u) => u.name === name);
+  return foundUser ? foundUser.message : "No message found for this user";
+};
 
-export function getUsername() {
-  return user.find((user) => user.name);
+export function getUsername(name) {
+  return user.find((user) => user.name === name);
 }
 export function getNickname() {
   return user.find((user) => user.nickname);
