@@ -12,15 +12,25 @@ const user = [
     nickname: "Bunny",
     email: "ayo@gmail.com",
     secretCode: "0401",
-    message: "You're amazing, you're beautiful, you're sweet, you're pretty, you're special, you're who i want, you're just so good - for me. \n I love you a lot and I need you to know a million times."
+    message:
+      "You're amazing, you're beautiful, you're sweet, you're pretty, you're special, you're who i want, you're just so good - for me. \n I love you a lot and I need you to know a million times.",
+  },
+  {
+    name: "Ayomide ",
+    nickname: "Bunny",
+    email: "ayo@gmail.com",
+    secretCode: "0401",
+    message:
+      "You're amazing, you're beautiful, you're sweet, you're pretty, you're special, you're who i want, you're just so good - for me. \n I love you a lot and I need you to know a million times.",
   },
   {
     name: "ayomideB",
     nickname: "Bestie",
     email: "",
     secretCode: "0402",
-    message: "You're amazing and you get big head, Thank you for always being there and being you. Thank you for the advices and words. "
-  }
+    message:
+      "You're amazing and you get big head, Thank you for always being there and being you. Thank you for the advices and words. ",
+  },
 ];
 
 export const getMessageByName = (name) => {
