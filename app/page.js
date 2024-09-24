@@ -30,7 +30,7 @@ export default function Home() {
             <input
               type="name"
               id="name"
-              className="border border-white shadow-md w-[350px] h-8 rounded-2xl pl-[90px]"
+              className="border border-white shadow-md w-[350px] h-8 rounded-2xl pl-[90px] pt-2 text-xl"
               required
             />
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
             <input
               type="email"
               id="email"
-              className="border border-white shadow-md w-[320px] h-8 rounded-2xl pl-[90px]"
+              className="border border-white shadow-md w-[320px] h-8 rounded-2xl pl-[90px] pt-2 text-xl"
               required
             />
           </div>
