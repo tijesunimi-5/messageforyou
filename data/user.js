@@ -8,7 +8,7 @@ const user = [
       "You're a Genius, You're smart, I love you, You mean a whole lot to me. C'mon take your time blush all you can.",
   },
   {
-    name: "Ayomide ",
+    name: "Ayomide",
     nickname: "Bunny",
     email: "ayo@gmail.com",
     secretCode: "0401",
