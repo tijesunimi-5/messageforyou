@@ -15,7 +15,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-export default function MessagePage() {
+export default function Page() {
   const { name } = useParams(); // Fetch the dynamic route parameter
 
   const message = getMessageByName(name); // Get message by name
